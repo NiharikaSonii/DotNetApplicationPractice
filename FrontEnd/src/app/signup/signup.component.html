@@ -1,0 +1,45 @@
+<div class="signuppage">
+    <div class="signupform">
+        <form method="post">
+            <table>
+                <tr>
+                    <td id="errorMsg">
+                       {{errorMsg}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="fname" id="fname" placeholder="First Name"
+                            [(ngModel)]="fname">
+                    </td>
+                    <td>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name"
+                            [(ngModel)]="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Please Choose Your Gender: <input type="radio" id="male" name="gender" value="male" [(ngModel)]="gender">Male &nbsp; <input type="radio" id="Female" name="gender" value="Female" [(ngModel)]="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2" >
+                        <input type="email" name="email" id="email" placeholder="Please Enter Your Email"
+                            [(ngModel)]="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="password" name="password" id="password" placeholder="Please Enter Your password"
+                            [(ngModel)]="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <button (click)="auth()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

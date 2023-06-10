@@ -1,0 +1,30 @@
+<div class="loginpage">
+    <div class="loginform">
+        <form method="post">
+            <table>
+                <tr>
+                    <td id="errorMsg">
+                        {{errorMsg}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="Please Enter Your Email"
+                            [(ngModel)]="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" id="password" placeholder="Please Enter Your password"
+                            [(ngModel)]="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <button (click)="auth()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

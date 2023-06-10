@@ -1,0 +1,53 @@
+.signuppage {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+
+    .signupform {
+        width: 400px;
+        height: 300px;
+        background-color: bisque;
+        display: flex; 
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #errorMsg {
+        color: red;
+        font-size: small;
+    }
+
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3px 4px;
+}
+
+td {
+  text-align: center;  
+}
+
+input{
+    text-align: center;
+}
+
+#fname {
+    width: 162px;
+    text-align: center;
+}
+#lname {
+    width: 162px;
+    text-align: center;
+}
+
+#email{
+    width: 330px;
+}
+
+#password{
+    width: 330px;
+}

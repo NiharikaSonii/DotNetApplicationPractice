@@ -1,0 +1,71 @@
+<div class="journeyDetails">
+    <table>
+        <tr>
+            <td class="detailstd">
+                From
+            </td>
+            <td class="detailstd">
+                To
+            </td>
+        </tr>
+        <tr>
+            <td class="detailstd">
+                {{from}}
+            </td>
+            <td class="detailstd">
+                {{to}}
+            </td>
+        </tr>
+        <tr>
+            <td class="detailstd">
+                Departure Time = {{departure}}
+            </td>
+            <td class="detailstd">
+                Arrival Time = {{arrival}}
+            </td>
+        </tr>
+        <tr>
+            <td class="detailstd">
+                Boarding Date = {{date}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="formnote">
+    <h3>Please {{username}}, Provide Passanger Details</h3>
+</div>
+
+<div class="passanger">
+    <form method="post">
+        <table class="bookingformtable">
+            <tr>
+                <td class="formtd">First Name</td>
+                <td class="formtd"><input type="text" name="fname" id="fname" class="name" [(ngModel)]="fname"></td>
+            </tr>
+            <tr>
+                <td class="formtd">Last Name</td>
+                <td class="formtd"><input type="text" name="lname" id="lname" class="name" [(ngModel)]="lname"></td>
+            </tr>
+            <tr>
+                <td class="formtd">Gender</td>
+                <td class="formtd">
+                    <input type="radio" name="gender" id="male" value="male" [(ngModel)]="gender"> <label for="male" >MALE</label> &nbsp;
+                    <input type="radio" name="gender" id="female" value="female" [(ngModel)]="gender"> <label for="female" >FEMALE</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="formtd">Age</td>
+                <td class="formtd"><input type="text" name="age" id="age" [(ngModel)]="age"></td>
+            </tr>
+            <tr>
+                <td class="formtd">Mobile Number</td>
+                <td class="formtd">
+                    <input type="tel" name="mobile" id="mobile" [(ngModel)]="mobile">
+                </td>
+            </tr>
+        </table>
+        <div class="price"><p>Total Fair to Pay : {{price}}</p></div>
+        <div class="buttondiv" (click)="passangerDetails()"><button>BOOK NOW</button></div>
+    </form>
+</div>

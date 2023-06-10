@@ -1,0 +1,41 @@
+.planjournerypage {
+    display: table;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    .searcharea {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+        background-color: bisque;
+        width: fit-content;
+        height: 45px;
+    }
+
+    .flightdetails {
+        display: table;
+        margin: auto;
+        align-items: center;
+    }
+
+    .errorBox {
+        color: red;
+        font-weight: bold;
+    }
+
+    .flightlist {
+        border-collapse: separate;
+        border-spacing: 75px 2px;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0px;
+}
+
+input {
+    text-align: center;
+}

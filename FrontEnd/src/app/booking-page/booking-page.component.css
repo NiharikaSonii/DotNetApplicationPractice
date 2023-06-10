@@ -1,0 +1,59 @@
+.formnote {
+    text-align: center;
+    margin-top: 20px;
+}
+.journeyDetails{
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.detailstd {
+    width: 300px;
+    text-align: center;
+}
+
+.passanger {
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+}
+.name {
+    width: 199px;
+}
+#fname {
+    margin-right: 30px;
+}
+#age {
+    width: 50px;
+}
+#mobile {
+   width:  300px;
+}
+.bookingformtable{
+    text-align: left;
+    border: 1px solid black;
+}
+.formtd {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.buttondiv {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+
+button {
+    margin-right: 30px;
+}
+.price {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+p{
+    margin-top: 10px;
+    margin-right: 10px;
+}

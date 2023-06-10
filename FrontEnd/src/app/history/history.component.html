@@ -1,0 +1,12 @@
+<div class="bookings">
+    <table class="history">
+        <tr>
+            <th>BOOKING ID</th> <th>JOURNEY DATE</th> <th></th>
+        </tr>
+        <tr *ngFor="let booking of bookings">
+            <td>{{booking.id}}</td>
+            <td>{{booking.date}}</td>
+            <td><Button (click)="CanceBooking(booking.id)">Cancel Booking</Button></td>
+        </tr>
+    </table>
+</div>

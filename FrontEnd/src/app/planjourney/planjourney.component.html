@@ -1,0 +1,50 @@
+<div class="planjournerypage">
+    <div class="errorBox">
+        {{errorMsg}}
+    </div>
+    <div class="searcharea">
+        <table>
+            <tr>
+                <td>
+                    <select name="from" id="from" [(ngModel)]="from">
+                        <option value="" disabled selected hidden >choose boarding</option>
+                        <option value="mumbai">mumbai</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="to" id="to" [(ngModel)]="to">
+                        <option value="" disabled selected hidden>Choose destination</option>
+                        <option value="pune">pune</option>
+                    </select>
+                </td>
+                <td>
+                    departure date : <input type="date" name="date" id="date" [min]="today" [(ngModel)] = "date">
+                </td>
+                <td>
+                    <button (click)="search()">Search</button>
+                </td>
+            </tr>
+        </table>
+    </div> 
+    
+    <div class="flightdetails" [hidden]="isShowDiv">
+        <table class="flightlist">
+            <tr>
+                <th>Airline Name</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+                <th>Price</th>
+                <th>Available Seats</th>
+                <th></th>
+            </tr>
+            <tr *ngFor="let flight of flights">
+                <td>{{flight.airlineName}}</td>
+                <td>{{flight.departureTime}}</td>
+                <td>{{flight.arrivalTime}}</td>
+                <td>{{flight.price}}</td>
+                <td>{{flight.availableSeats}}</td>
+                <td><Button (click)="BookingReq(flight.timingId)">Book Now</Button></td>
+            </tr>
+        </table>
+    </div>
+</div>
